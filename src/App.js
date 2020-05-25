@@ -1,26 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import './styles/App.css'
+import Editor from './components/Editor'
+import Previewer from './components/Previewer'
+import { connect } from 'react-redux';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor(props){
+    super(props);
+
+    this.state = {
+      content:''
+    }
+
+  }
+
+
+  //Rendering 
+  render() {
+    return (
+      <div class="container-fluid">
+        <Editor id="editor-component"/>
+        <Previewer data={this.props.content} />
+      </div>
+    )
+  }
 }
 
-export default App;
+
+
+const mapStateToProps = (state) => {
+  return {
+    content : state.updateContentReducer.content
+  }
+
+  console.log("App props is",this.props.content)
+
+}
+
+export default connect(mapStateToProps,null)(App);
