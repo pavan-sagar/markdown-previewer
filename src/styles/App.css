@@ -2,13 +2,15 @@ div.container-fluid {
   background-color: cornflowerblue;
   min-height: 100vh;
   padding-bottom: 2rem;
+  padding-top:1rem;
   
 }
 
 
 
+
 .previewer-container {
-  margin-top: 4.5rem;
+  margin-top: 2rem;
   min-height: 59vh;
   margin-bottom: 3rem;
 }

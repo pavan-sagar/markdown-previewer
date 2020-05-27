@@ -18,9 +18,9 @@ class App extends Component {
   //Rendering 
   render() {
     return (
-      <div class="container-fluid">
-        <Editor id="editor-component"/>
-        <Previewer data={this.props.content} />
+      <div className="container-fluid">
+        { !this.props.previewerIsMaximised && <Editor id="editor-component"/> }
+        { !this.props.editorIsMaximised && <Previewer data={this.props.content} /> }
       </div>
     )
   }
@@ -30,10 +30,10 @@ class App extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    content : state.updateContentReducer.content
+    content : state.updateContentReducer.content,
+    editorIsMaximised : state.maximiseWindowReducer.editorIsMaximised,
+    previewerIsMaximised : state.maximiseWindowReducer.previewerIsMaximised,
   }
-
-  console.log("App props is",this.props.content)
 
 }
 
