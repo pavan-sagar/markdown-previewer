@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import '../styles/Editor.css'
 import { updateContent } from '../redux/slices/updateContentSlice'
 import { connect } from 'react-redux'
+import marked from 'marked'
 
 
 export class Editor extends Component {
@@ -16,8 +17,15 @@ export class Editor extends Component {
 
         }
 
+        getMarkedDownText(text){
+                let rawMarkUp = marked(text, {sanitize:true});
+                return { __html: rawMarkUp };
+        }
+
 
         handleEditorContentChange(e){
+                
+                
                 this.props.updateContent({content:e.target.value})
         }
         
