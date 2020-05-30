@@ -1,89 +1,97 @@
-
 .previewer-container {
-    
-    width:70rem;
-    
-    margin-left:auto;
-    margin-right: auto;
-   
-   
-    border:1px;
-    border:1px solid black;
-    background-color: white;
-    
-    
+  width: 70rem;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px;
+  border: 1px solid black;
+  background-color: white;
+  transition: all 0.3s ease-out;
 }
 
+.previewer-container-maximised {
+  width: 90vw;
+  height: 90vh;
+}
 .previewer-window-header {
-    border:1px solid black;
-    margin:0;
-    padding:0.5rem 0.5rem 0.5rem 1rem;
-    font-weight: bold;
-    background-color:  rgba(63, 88, 133, 0.658);
-    display: flex;
+  border: 1px solid black;
+  margin: 0;
+  padding: 0.1rem 0.5rem 0.1rem 1rem;
+  font-weight: bold;
+  background-color: rgba(63, 88, 133, 0.658);
+  display: flex;
 }
 
 .previewer-content {
-    background-color: white;
-    position: relative;
-    padding-left: 2rem;
-    margin:0;
+  background-color: white;
+  position: relative;
+  padding: 0 2rem;
+  margin: 0;
+  border-top: 1px solid black;
 }
 
-.previewer-window-header .close-button {
-    margin-left: 92%;
-    color:rgba(0, 255, 221, 0.753);
-    transition:transform 0.1s;
-    
+.previewer-window-header .fa-arrows-alt {
+  margin-left: 90.3%;
+  margin-top: 0.2rem;
+  color: rgba(0, 0, 0, 0.753);
+  transition: transform 0.1s;
 }
 
-.previewer-window-header .close-button:hover {
-    
-    transform: scale(1.5);
-    
+.previewer-window-header .fa-arrows-alt:hover {
+  transform: scale(1.2);
 }
 
+.previewer-window-header .fa-compress {
+  color: rgba(0, 0, 0, 0.753);
+  transition: transform 0.1s;
+}
 
-h1,h2,h3 {
-    box-sizing: border-box;
-    border-bottom:2px solid black;
-    padding:0 1rem;
+.previewer-window-header .fa-compress:hover {
+  transform: scale(0.7);
+}
+
+h1,
+h2,
+h3 {
+  box-sizing: border-box;
+  border-bottom: 2px solid black;
+  padding: 0 1rem;
 }
 
 code {
-    background: white;
-    padding: 1px 4px 2px 4px;
-    font-size: 12px;
-    font-weight: bold;
+  background: white;
+  padding: 1px 4px 2px 4px;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .previewer-content pre {
-    background-color: rgb(229, 238, 145);
-    padding:2rem;
-    display: inline-block;
+  background-color: rgb(229, 238, 145);
+  padding: 2rem;
+  display: inline-block;
 }
 
 .previewer-content p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 blockquote {
-    border-left: 2px solid rgba(143, 127, 127, 0.637);
-    padding-left: 0.2rem;
-    
-    margin-left: 2rem;
+  border-left: 2px solid rgba(143, 127, 127, 0.637);
+  padding-left: 0.2rem;
+
+  margin-left: 2rem;
 }
 
 table {
-    border-collapse: collapse;
+  border-collapse: collapse;
 }
-th, td {
-    border:2px solid black;
-   
-    margin:0;
-    padding:0.4rem;
+th,
+td {
+  border: 2px solid black;
+
+  margin: 0;
+  padding: 0.4rem;
 }
 
 th {
-    background-color: rgba(128, 128, 128, 0.623);
+  background-color: rgba(128, 128, 128, 0.623);
 }

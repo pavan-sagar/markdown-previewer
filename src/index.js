@@ -1,19 +1,29 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
-import 'bootstrap/dist/css/bootstrap.min.css'
-import { Provider } from 'react-redux'
-import { store }  from './redux/store'
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import * as serviceWorker from "./serviceWorker";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { Provider } from "react-redux";
+import { store } from "./redux/store";
+import "font-awesome/css/font-awesome.min.css";
+
+// Change title of the page
+
+document.title = "Markdown Previewer";
+
+//FCC test validation script
+var FCCValidationScript = document.createElement('script');  
+FCCValidationScript.setAttribute('src','https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js');
+document.head.appendChild(FCCValidationScript);
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
       <App />
     </Provider>
-   </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>,
+  document.getElementById("root")
 );
 
 // If you want your app to work offline and load faster, you can change

@@ -1,49 +1,50 @@
-
 .editor-container {
-    width:30%;
-    min-height: 15.5rem;
-    margin-left:auto;
-    margin-right: auto;
-    background-color: white;
-    position: relative;
-    top:5vh;
-    border: 1px solid black;
-    margin-bottom: 3.5rem;
-    
+  width: 30%;
+  min-height: 15.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  position: relative;
+  top: 5vh;
+  border: 1px solid black;
+  margin-bottom: 3.5rem;
+  transition: height 0.3s ease-out, width 0.3s ease-out;
 }
 
 .editor-window-header {
-    border:1px solid black;
-    margin:0;
-    padding:0.5rem 0rem 0.5rem 1rem;
-    font-weight: bold;
-    background-color: rgba(63, 88, 133, 0.658);
-    display: flex;
+  border: 1px solid black;
+  margin: 0;
+  padding: 0.1rem 0rem 0.1rem 1rem;
+  font-weight: bold;
+  background-color: rgba(63, 88, 133, 0.658);
+  display: flex;
 }
 
-#text-pad{
-    
-   width: 100%;
-   min-height: 15.5rem;
-   height: 94.6%;
-   
-   vertical-align: top;
-    overflow: auto;
-   
-   padding:0;
-   resize: vertical;
-
+#editor {
+  width: 100%;
+  min-height: 15.5rem;
+  height: 96.6%;
+  vertical-align: top;
+  overflow: auto;
+  padding: 0;
+  resize: vertical;
 }
 
-.editor-window-header .close-button {
-    margin-left: 88%;
-    color:rgba(0, 255, 221, 0.753);
-    transition:transform 0.1s;
-    
+.editor-window-header .fa-arrows-alt {
+  margin-left: 84.3%;
+  margin-top: 0.2rem;
+  color: rgba(0, 0, 0, 0.753);
+  transition: transform 0.1s, margin-left 0.1s;
 }
 
-.editor-window-header .close-button:hover {
-    
-    transform: scale(1.5);
-    
+.editor-window-header .fa-arrows-alt:hover {
+  transform: scale(1.2);
+}
+.editor-window-header .fa-compress {
+  color: rgba(0, 0, 0, 0.753);
+  transition: transform 0.1s, margin-left 0.1s;
+}
+
+.editor-window-header .fa-compress:hover {
+  transform: scale(0.7);
 }
