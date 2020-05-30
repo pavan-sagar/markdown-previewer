@@ -1,4 +1,4 @@
-Markdown previewer is meant to have easily understand raw text (no HTML tags) and have that rendered with HTML formatting for presentation. 
+Markdown previewer is meant to have easily understandable raw text (no HTML tags) and have that rendered with HTML formatting for presentation. 
 
 ![Annotation 2020-05-31 001144](https://user-images.githubusercontent.com/46797663/83336715-5ff65600-a2d3-11ea-9811-63eee605d2ad.png)
 
