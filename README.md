@@ -6,3 +6,5 @@ Markdown previewer is meant to have easily understand raw text (no HTML tags) an
 Powered by : Marked.js
 
 Tech : React, Redux (Although Redux was not needed in such a basic application, I have used it just to experience plugging it in a React app for state management).
+
+Live @ https://pavan-sagar.github.io/markdown-previewer/
