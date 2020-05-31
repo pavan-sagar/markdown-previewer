@@ -90,7 +90,7 @@ And here. | Okay. | I think we get it.
         width: "90vw",
         height: "90vh",
         top: "2rem",
-        marginBottom: "0",
+        marginBottom: "3.1rem",
       },
       maximisedWindowXmark: {
         marginLeft: "95%",
@@ -106,7 +106,6 @@ And here. | Okay. | I think we get it.
     return (
       <div
         className="editor-container"
-        
         style={
           this.state.isMaximised
             ? conditionalStyles["maximisedWindowContainer"]
@@ -125,11 +124,7 @@ And here. | Okay. | I think we get it.
           Editor
           <i
             className={`fa ${expandCollapseIconClass}`}
-            style={
-              this.state.isMaximised
-                ? conditionalStyles["maximisedWindowXmark"]
-                : {}
-            }
+           
             onClick={this.handleWindowSizeToggle}
           ></i>
         </p>

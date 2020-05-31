@@ -1,13 +1,10 @@
-div.container-fluid {
+div.my-container {
   background-color: cornflowerblue;
-  min-height: 100vh;
+
   padding-bottom: 2rem;
-  padding-top:1rem;
-  
+  padding-top: 1rem;
+  width: 100vw;
 }
-
-
-
 
 .previewer-container {
   margin-top: 2rem;
@@ -15,3 +12,15 @@ div.container-fluid {
   margin-bottom: 3rem;
 }
 
+@media (max-width: 500px) {
+  .my-container {
+    width: 100vw !important;
+  }
+
+  .previewer-container {
+    margin-top: 2rem;
+    min-height: 0vh;
+    margin-bottom: 3rem;
+    max-width: 50%;
+  }
+}

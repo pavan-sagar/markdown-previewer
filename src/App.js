@@ -17,7 +17,7 @@ class App extends Component {
     return (
       //  We hide the window when another window is maximised.
       // By default both windows are set to 'minimised/false' and so both the windows are visible initially.
-      <div className="container-fluid">
+      <div className="my-container">
         {!this.props.previewerIsMaximised && <Editor id="editor-component" />}
         {!this.props.editorIsMaximised && (
           <Previewer data={this.props.content} />

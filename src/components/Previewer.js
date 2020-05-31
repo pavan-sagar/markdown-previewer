@@ -67,11 +67,7 @@ export class Previewer extends Component {
           Previewer
           <i
             className={`fa ${expandCollapseIconClass}`}
-            style={
-              this.state.isMaximised
-                ? conditionalStyles["maximisedWindowXmark"]
-                : {}
-            }
+            
             onClick={this.handleWindowSizeToggle}
           />
         </p>
