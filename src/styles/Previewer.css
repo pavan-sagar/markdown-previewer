@@ -106,8 +106,13 @@ th {
     margin-top: 3rem;
     display: block;
     transition: all 0.3s ease-out;
-    height: 50vh;
+    min-height: 50vh;
     overflow: scroll;
+  }
+
+  .previewer-container-maximised {
+    width: 90vw;
+    height: 90vh !important;
   }
 
   .previewer-window-header {
@@ -133,7 +138,7 @@ th {
   .previewer-container-maximised {
     width: 90vw;
     height: 90%;
-    overflow-wrap: wrap;
+    overflow-wrap: break-word;
   }
 
   .previewer-container-maximised .previewer-content {

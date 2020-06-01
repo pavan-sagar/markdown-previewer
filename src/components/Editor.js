@@ -105,12 +105,12 @@ And here. | Okay. | I think we get it.
 
     return (
       <div
-        className="editor-container"
-        style={
-          this.state.isMaximised
-            ? conditionalStyles["maximisedWindowContainer"]
-            : {}
-        }
+        className={`editor-container ${this.state.isMaximised ? "editor-container-maximised" : ''}`}
+        // style={
+        //   this.state.isMaximised
+        //     ? conditionalStyles["maximisedWindowContainer"]
+        //     : {}
+        // }
       >
         <p className="editor-window-header">
           <i

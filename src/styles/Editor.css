@@ -11,6 +11,15 @@
   transition: height 0.3s ease-out, width 0.3s ease-out;
 }
 
+.editor-container-maximised {
+
+  width: 90vw;
+  height: 90vh;
+  top: 2rem;
+  margin-bottom: 3.1rem;
+
+}
+
 .editor-window-header {
   border: 1px solid black;
   margin: 0;
@@ -55,16 +64,26 @@
     width: 90vw;
     height: 35%;
     margin: 0 auto;
+    transition: all 0.3s ease-out;
+  }
+
+  .editor-container-maximised {
+
+    width: 90vw;
+    height: 90vh;
+    top: 2rem;
+    margin-bottom: 3.1rem;
+  
   }
 
   #editor {
-    height: 95.5%;
+    height: 96.1%;
     width: 100%;
   }
 
   .editor-window-header .fa-arrows-alt {
     margin-left: 75.3%;
-    transition: transform 0.1s, margin-left 0.1s;
+    
   }
 
   .editor-window-header .fa-compress {
@@ -72,7 +91,5 @@
     padding-top: 0.2rem;
   }
 
-  .editor-window-header .fa-arrows-alt:active {
-    transform: scale(1.2);
-  }
+  
 }
