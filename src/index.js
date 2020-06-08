@@ -10,12 +10,12 @@ import "font-awesome/css/font-awesome.min.css";
 
 // Change title of the page
 
-document.title = "Markdown Previewer";
+// document.title = "Markdown Previewer";
 
-//FCC test validation script
-var FCCValidationScript = document.createElement('script');  
-FCCValidationScript.setAttribute('src','https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js');
-document.head.appendChild(FCCValidationScript);
+// //FCC test validation script
+// var FCCValidationScript = document.createElement('script');  
+// FCCValidationScript.setAttribute('src','https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js');
+// document.head.appendChild(FCCValidationScript);
 
 ReactDOM.render(
   <React.StrictMode>
