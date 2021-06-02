@@ -53,7 +53,7 @@ And here. | Okay. | I think we get it.
 - Even if you use dashes or asterisks.
 * And last but not least, let's not forget embedded images:
 
-![React Logo w/ Text](https://goo.gl/Umyytc)
+![React Logo w/ Text](https://cdn.dribbble.com/users/2442115/screenshots/8699490/dec-01-2019_19-16-16.gif)
 `,
       isMaximised: false,
     };
